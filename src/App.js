@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import TodoList from "./components/TodoList";
+import MemoPropTypes from "./components/MemoPropTypes";
+import UseEffect from "./components/UseEffect";
+import CleanUpFunction from "./components/CleanUpFunction";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <TodoList />
+      <hr style={{margin:"100px 0"}}/>
+      <MemoPropTypes />
+      <hr style={{margin:"100px 0"}}/>
+      <UseEffect />
+      <hr style={{margin:"100px 0"}}/>
+      <CleanUpFunction />
+    </>
   );
 }
 
